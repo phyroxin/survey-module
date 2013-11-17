@@ -203,7 +203,7 @@ var app = function(){
 				});	
 			});
 			
-			$.post('home/postData', jsonObj, function(o){
+			$.post('/api/addData', jsonObj, function(o){
 				if(o.state==='err')
 					console.log(o);
 				else

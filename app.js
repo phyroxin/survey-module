@@ -46,6 +46,7 @@ if ('development' == app.get('env')) {
  */
 app.get('/', 				model.index);
 app.post('/api/getSurvey', 	model.getAll);
+app.post('/api/addData', 	model.addData);
 /*
 app.get('/api/addfriend/:name', model.addFriend);
 app.get('/api/delfriend', 		model.delFriend);

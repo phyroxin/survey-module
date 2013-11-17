@@ -45,8 +45,31 @@ exports.getAll = function(req, res){
 			res.send(doc);
 		}
 	});
-	
-}
+};
+
+exports.addData = function(req, res){
+	// Get our form values
+	var data = req.body;
+	for (var key in data) {
+		var obj = data[key];
+		console.log(key + " = " + data[key]);
+	}
+	// Set our collection
+	var collection = db.get('answercollection');
+
+	// Submit to the DB
+	collection.insert(data, function(err, doc){
+		if(err){
+			// If it failed, return error
+			res.send('There was a problem adding the information to the database.');
+		}
+		else{
+			console.log('Data inserted successfully!');
+			// If it worked, forward to success page
+			//res.send({'name':friend});
+		}
+	});
+};
 /*
 exports.newuser = function(req, res){
 	console.log('Add user page');
@@ -55,28 +78,6 @@ exports.newuser = function(req, res){
 	});
 };
 
-exports.addFriend = function(req, res){
-	// Get our form values
-	var friend	= req.params.name;
-	console.log(friend);
-	// Set our collection
-	var collection = db.get('friendcollection');
-	
-	// Submit to the DB
-	collection.insert({
-		 'name'	:friend
-	}, function(err, doc){
-		if(err){
-			// If it failed, return error
-			res.send('There was a problem adding the information to the database.');
-		}
-		else{
-			console.log('Name: '+friend+' inserted successfully!');
-			// If it worked, forward to success page
-			res.send({'name':friend});
-		}
-	});
-};
 
 exports.delFriend = function(req, res){
 
