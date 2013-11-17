@@ -1,0 +1,42 @@
+<!-- Question Label Template -->
+<script type="template" id="titleTemp">
+	<div class="questionBlock">Q<%= order %>:&nbsp;<%= question %></div>
+</script>
+
+<!-- Question Wrap Templates -->
+<script type="template" id="textWrapTemp">
+	<div class="questionWrap<%= page %>"></div>
+</script>
+
+<!-- Question Input Templates -->
+<script type="template" id="textInputTemp">
+	<div class="questionBlock">
+		<input type="text" name="q<%= order %>" id="q<%= order %>" value />
+	</div>
+</script>
+
+<!-- Question Select Templates -->
+<script type="template" id="selectInputTemp">
+	<div class="questionBlock">
+		<select name="q<%= order %>" id="q<%= order %>">
+			   <option></option>
+			<% _.each(options, function(opt) { %>
+			   <option><%= opt %></option>
+			<%}); %>
+		</select>
+	</div>
+</script>
+
+<!-- Question Slider Templates -->
+<script type="template" id="sliderInputTemp">
+	<div class="questionBlock">
+		<div id="q<%= order %>" class="slider"></div>
+	</div>
+</script>
+
+<!-- End Page Templates -->
+<script type="template" id="endPageTemp">
+	<div class="questionBlock">
+		<h2><a href="<%= url %>"><%= text %></a></h2>
+	</div>
+</script>

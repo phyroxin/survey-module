@@ -1,0 +1,346 @@
+/*========================================================
+ * Import nib
+ *========================================================
+ */
+/*========================================================
+ * CSS reset
+ *========================================================
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*========================================================
+ * Store main colours
+ *========================================================
+ */
+html {
+  overflow-y: scroll;
+}
+body {
+  font-family: 'Andika';
+  background-color: #eee;
+  color: #444;
+}
+/*========================================================
+ * Text style
+ *========================================================
+ */
+h1,
+h2 {
+  font-size: 40px;
+  text-shadow: 0px 1px 0px #fff;
+}
+/*========================================================
+ * Container
+ *========================================================
+ */
+.containerClass {
+  width: 500px;
+  margin: 10px auto;
+  overflow: hidden;
+  -moz-box-shadow: 0px 0px 5px #888;
+  -ms-box-shadow: 0px 0px 5px #888;
+  -webkit-box-shadow: 0px 0px 5px #888;
+  -webkit-box-shadow: 0px 0px 5px #888;
+  -webkit-box-shadow: 0px 0px 5px #888;
+  box-shadow: 0px 0px 5px #888;
+}
+@media (min-width: 200px) and (max-width: 939px) {
+  .containerClass {
+    width: 100%;
+  }
+}
+/*========================================================
+ * Header
+ *========================================================
+ */
+header {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  background-color: #ddd;
+  border-bottom: 1px solid #9b9b9b;
+  text-shadow: 0px -1px 0px #9b9b9b;
+}
+/*========================================================
+ * Main Contents
+ *========================================================
+ */
+.titleClass,
+.controlClass {
+  overflow: hidden;
+  padding: 10px;
+  background-color: #ddd;
+}
+.progressWrap {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 99.5%;
+  height: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+.progressFill {
+  background-color: #dd514c;
+  background-image: -moz--webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -moz--moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -moz--o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -moz--ms-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -moz-linear-gradient(to bottom, #ee5f5b, #c43c35);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit--webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit--moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit--o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit--ms-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit-linear-gradient(to bottom, #ee5f5b, #c43c35);
+  background-image: -o--webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o--moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o--o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o--ms-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o-linear-gradient(to bottom, #ee5f5b, #c43c35);
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: linear-gradient(to bottom, #ee5f5b, #c43c35);
+  background-repeat: repeat-x;
+  width: 0%;
+  height: 20px;
+}
+.questionBlock {
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+}
+.main-content,
+.backboneSandbox,
+.underscoreTemp {
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+@media (min-width: 440px) and (max-width: 939px) {
+  .main-content,
+  .backboneSandbox,
+  .underscoreTemp {
+    width: 65%;
+    padding: 5px;
+  }
+}
+@media (min-width: 200px) and (max-width: 439px) {
+  .main-content,
+  .backboneSandbox,
+  .underscoreTemp {
+    width: 100%;
+    padding: 5px;
+    float: left;
+  }
+}
+.clear {
+  clear: both;
+}
+/*========================================================
+ * Input
+ *========================================================
+ */
+input,
+textarea,
+select,
+button {
+  background: #f6f6f6;
+  color: #666;
+  width: 200px;
+  font-size: 13px;
+  padding: 7px 10px;
+  border: 1px solid #b9b9b9;
+  border-top-color: #a4a4a4;
+  -moz-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.17);
+  -ms-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.17);
+  box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.17);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  float: left;
+}
+select,
+.ui-slider,
+.ui-slider-handle {
+  width: 95%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.prevStyle,
+.nextStyle,
+.endStyle {
+  width: auto;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  float: left;
+}
+.prevStyle hover,
+.nextStyle hover,
+.endStyle hover {
+  background: #fff;
+  color: #c00;
+  -moz-box-shadow: 0px 0px 10px #999;
+  -ms-box-shadow: 0px 0px 10px #999;
+  -webkit-box-shadow: 0px 0px 10px #999;
+  -webkit-box-shadow: 0px 0px 10px #999;
+  -webkit-box-shadow: 0px 0px 10px #999;
+  box-shadow: 0px 0px 10px #999;
+}
+.prevStyleNohover {
+  width: auto;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*========================================================
+ * Footer
+ *========================================================
+ */
+footer {
+  width: 500px;
+  margin: 50px auto;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  font-size: 13px;
+}
+@media (min-width: 200px) and (max-width: 939px) {
+  footer {
+    width: 95%;
+    padding: 5%;
+  }
+}
